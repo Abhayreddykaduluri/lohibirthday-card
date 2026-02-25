@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>✨ Happy Birthday ✨</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ─── LANDING SCREEN ─── -->
+  <div id="landing">
+    <div class="landing-ornament">✦ ✦ ✦</div>
+    <p class="landing-title">A Special Message Awaits You</p>
+    <button id="open-btn" onclick="openCard()"><span>Tap Here ✨</span></button>
+    <p class="landing-sub">Touch to reveal</p>
+  </div>
+
+  <!-- ─── GLITTER CONTAINER ─── -->
+  <div id="glitter-container"></div>
+
+  <!-- ─── CANVAS (fireworks + sparkles) ─── -->
+  <canvas id="canvas"></canvas>
+
+  <!-- ─── BIRTHDAY CARD ─── -->
+  <div id="card-area">
+    <div class="card">
+
+      <!-- Shimmer ribbon -->
+      <div class="card-ribbon"></div>
+
+      <!-- Header -->
+      <div class="card-header">
+        <div class="ornament-line"><span>✦</span></div>
+        <h1 class="card-title">
+          Happy<br>
+          <em>Birthday Friendu</em>
+        </h1>
+        <p class="card-subtitle">With all the love in the world</p>
+      </div>
+
+      <!-- Photo Slideshow -->
+      <div class="photo-section">
+        <div class="photo-frame">
+          <!-- Shown only if no photos are configured -->
+          <div class="photo-placeholder" id="photo-placeholder">
+            <div class="upload-icon">🖼️</div>
+            <p>Place photos in the <strong style="color:var(--gold)">photos/</strong> folder<br>and list them in MY_PHOTOS</p>
+          </div>
+          <!-- Slides injected by JS -->
+          <div id="slideshow"></div>
+          <!-- Dot navigation -->
+          <div class="slide-nav" id="slide-nav"></div>
+          <!-- Photo counter badge -->
+          <div class="photo-count-badge" id="photo-count"></div>
+        </div>
+      </div>
+
+      <!-- Birthday Message -->
+      <div class="card-message">
+        <span class="quote-mark">"</span>
+        <p class="wish-text">
+          Happy Birthday to the one who makes my life a little more beautiful just by being in it.
+          <br><br>
+          You are truly someone extraordinary,
+          and the world is endlessly better with you in it.
+        </p>
+        <div class="signature-area">
+          <div class="signature-line"></div>
+          <span class="signature">Always by your side ✦</span>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="card-footer">
+        <div class="footer-ornament">✦ &nbsp; ✦ &nbsp; ✦</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ─── MUSIC TOGGLE BUTTON ─── -->
+  <button id="music-btn" onclick="toggleMusic()" title="Toggle Music">🎵</button>
+
+  <!-- ─── CLICK HINT ─── -->
+  <div class="click-hint" id="click-hint">✦ &nbsp; Tap anywhere for magic &nbsp; ✦</div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
