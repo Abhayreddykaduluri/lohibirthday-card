@@ -23,9 +23,9 @@ const SONG_VOLUME    = 0.5;        // ← 0.0 (silent) to 1.0 (full)
    Supported: jpg, jpeg, png, gif, webp
 ───────────────────────────────────────────────────────── */
 const MY_PHOTOS = [
-  "photo1.jpg",
-  "photo2.jpg",
-  "photo3.jpg",
+  "photo1.jpeg",
+  "photo2.jpeg",
+  "photo3.jpeg",
   // Add more lines here ↑ — or remove lines you don't need
 ];
 
