@@ -10,17 +10,23 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- ─── LANDING SCREEN ─── -->
   <div id="landing">
     <div class="landing-ornament">✦ ✦ ✦</div>
     <p class="landing-title">A Special Message Awaits You</p>
     <button id="open-btn" onclick="openCard()"><span>Tap Here ✨</span></button>
     <p class="landing-sub">Touch to reveal</p>
   </div>
+  <!-- ─── GLITTER CONTAINER ─── -->
   <div id="glitter-container"></div>
+  <!-- ─── CANVAS (fireworks + sparkles) ─── -->
   <canvas id="canvas"></canvas>
+  <!-- ─── BIRTHDAY CARD ─── -->
   <div id="card-area">
     <div class="card">
+      <!-- Shimmer ribbon -->
       <div class="card-ribbon"></div>
+      <!-- Header -->
       <div class="card-header">
         <div class="ornament-line"><span>✦</span></div>
         <h1 class="card-title">
@@ -29,17 +35,23 @@
         </h1>
         <p class="card-subtitle">With all the love in the world</p>
       </div>
+      <!-- Photo Slideshow -->
       <div class="photo-section">
         <div class="photo-frame">
+          <!-- Shown only if no photos are configured -->
           <div class="photo-placeholder" id="photo-placeholder">
             <div class="upload-icon">🖼️</div>
             <p>Place photos in the <strong style="color:var(--gold)">photos/</strong> folder<br>and list them in MY_PHOTOS</p>
           </div>
+          <!-- Slides injected by JS -->
           <div id="slideshow"></div>
+          <!-- Dot navigation -->
           <div class="slide-nav" id="slide-nav"></div>
+          <!-- Photo counter badge -->
           <div class="photo-count-badge" id="photo-count"></div>
         </div>
       </div>
+      <!-- Birthday Message -->
       <div class="card-message">
         <span class="quote-mark">"</span>
         <p class="wish-text">
@@ -50,20 +62,24 @@
         </p>
         <div class="signature-area">
           <div class="signature-line"></div>
-          <span class="signature">✦ Always by your side ✦</span>
+          <span class="signature">✦ Always by your side,Abhay ✦</span>
         </div>
       </div>
+      <!-- Footer -->
       <div class="card-footer">
-        <div class="footer-ornament">✦ &nbsp;With Best Wishes ✦ &nbsp;Abhay ✦</div>
+        <div class="ornament-line"><span>✦</span></div>
       </div>
     </div>
   </div>
+  <!-- ─── MUSIC TOGGLE BUTTON ─── -->
   <button id="music-btn" onclick="toggleMusic()" title="Toggle Music">🎵</button>
+  <!-- ─── CLICK HINT ─── -->
   <div class="click-hint" id="click-hint">
     <span class="hint-sparkle left-sparkle">✦</span>
     <span class="hint-text">Tap anywhere for magic</span>
     <span class="hint-sparkle right-sparkle">✦</span>
   </div>
+  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
